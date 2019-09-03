@@ -1,0 +1,36 @@
+.x-hollow-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999990;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  &__layer {
+    z-index: 999992;
+    background: transparent;
+  }
+
+  &__rect {
+    position: fixed;
+    overflow: hidden;
+    box-sizing: content-box;
+    border: 1px solid #cecece;
+    &.rect-shadow {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    }
+    &.rect-round {
+      border-radius: 4px;
+    }
+  }
+}
+
+.x-hollow-mask__content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+}
